@@ -17,7 +17,7 @@ concurrency:
 jobs:
 
   # ──────────────────────────────────────────
-  # JOB 1: Validate (runs on push AND PRs)
+  ## JOB 1: Validate (runs on push AND PRs)
   # ──────────────────────────────────────────
   validate:
     name: Validate HTML
