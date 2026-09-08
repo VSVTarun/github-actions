@@ -77,10 +77,10 @@ jobs:
             --cache-control "max-age=3600"
           echo "✅ Deployment to S3 completed successfully"
 
-      - name: Invalidate CloudFront Cache (optional)
-        if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
-          echo "✅ CloudFront cache invalidated"
+      # - name: Invalidate CloudFront Cache (optional)
+      #   if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #       --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+      #       --paths "/*"
+      #     echo "✅ CloudFront cache invalidated"
