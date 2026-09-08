@@ -9,7 +9,7 @@ on:
       - main
   workflow_dispatch:          # Allows manual trigger from GitHub UI
 
-# Prevent multiple simultaneous deployments
+## Prevent multiple simultaneous deployments
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
