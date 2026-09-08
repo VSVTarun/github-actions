@@ -47,7 +47,7 @@ jobs:
           echo "All validations passed ✅"
 
   # ──────────────────────────────────────────
-  # JOB 2: Deploy (runs only on main branch)
+  ## JOB 2: Deploy (runs only on main branch)
   # ──────────────────────────────────────────
   deploy:
     name: Deploy to S3
